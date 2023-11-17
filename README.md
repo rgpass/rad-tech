@@ -36,6 +36,8 @@ Note: This assumes you are using macOS.
 
 - Sinatra was chosen to simulate a Ruby-based backend, while not having all the overhead of a Rails app
 
-## TODOs
+## Improvements
 
 - Add Y Statements for each item under Reasoning
+- Handle error state
+- Add pagination or infinite scrolling
