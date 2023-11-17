@@ -34,18 +34,16 @@ Note: This assumes you are using macOS.
 
 ## Reasoning
 
-- Sinatra was chosen to simulate a Ruby-based backend, while not having all the overhead of a Rails app
-- Did not use a preprocessor to better showcase vanilla CSS skills
-- Wanted to have DRY HTML so all styling would be handled in CSS
-- Applied Normalize.css to create a unified experience across browsers
-- Did not circle-crop the images because inspecting the Figma file's images shows they just _happen_ to be cropped
-- Did not align with the order on desktop view because I wanted to keep the code DRY, prioritize mobile first, and keep it accessible via `display: table-*` values
+This section includes choices that I made and why, following the [Y-Statements](https://medium.com/olzzio/y-statements-10eb07b5a177) structure (loosely).
+
+- **Sinatra:** Given the job description mentions HTML over-the-wire via Ruby on Rails libraries and Rails would be overkill for this assignment, I decided to serve the app via Sinatra and neglected other servers, bundlers, and pure HTML/CSS/JS
+- **Pure/Vanilla CSS:** Given the assignment says explicitly to not use styles provided by external libraries and that the preprocessor is directly related to the architecture, I decided to go with pure CSS, neglecting that it's not used (or rarely used) in production environments
+- **Desktop column order:** Given the design's significantly different layout for desktop and mobile, I decided to focus on mobile first while still having the HTML be DRY & accessible and handle all styling in CSS only, neglecting the order of the columns in the desktop design
+- **Normalize.css:** I applied Noramlize.css to create a unified experience across browsers, neglecting the small increase in render times (by shipping more code than needed)
+- **Not cropping images:** Given the design's images being all cropped into a circle, I decided against this because the Figma file shows they just _happen_ to be cropped
 
 ## Improvements
 
-- Desktop view
-- DRY up `application.css`
-- Add Y Statements for each item under Reasoning
 - Handle error state
 - Add pagination or infinite scrolling
 - Redo the designs to use auto-layout for much easier implementation
