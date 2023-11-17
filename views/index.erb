@@ -1,12 +1,15 @@
 <h1 class="page-title">Purchases</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-  </tr>
-  <% @data.each do |item| %>
-    <tr>
-      <td><%= item['name'] %></td>
-    </tr>
+<section class="purchases-container">
+  <% @data.each do |datum| %>
+    <article class="purchase-card">
+      <img class="purchase-location" src="<%= datum['location'] %>" alt="<%= datum['name'] %>">
+      <h2 class="purchase-name"><%= datum['name'] %></h2>
+      <p class="purchase-price"><%= datum['price'] %></p>
+      <p class="purchase-description"><%= datum['description'] %></p>
+      <p class="purchase-date-title">Purchase Date</p>
+      <p class="purchase-date"><%= datum['purchaseDate'] %></p>
+      <p class="purchase-category"><%= datum['category'] %></p>
+    </article>
   <% end %>
-</table>
+</section>
