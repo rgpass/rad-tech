@@ -44,3 +44,6 @@ Note: This assumes you are using macOS.
 - Add Y Statements for each item under Reasoning
 - Handle error state
 - Add pagination or infinite scrolling
+- Redo the designs to use auto-layout for much easier implementation
+- Suggest for the columns to be in the same order to minimize complexity
+- Suggest for designs in the future to use real data to remove ambiguity

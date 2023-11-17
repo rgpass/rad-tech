@@ -31,36 +31,54 @@
 .purchase-card {
   border: 1px solid #cdced9;
   border-radius: 0.625rem;
+  display: grid;
+  grid-template-areas:
+    "location name price"
+    "description description empty"
+    "purchaseDate purchaseDate empty";
+  grid-template-columns: 1.875rem 1fr 4.5625rem;
   padding: 1rem 1.5rem;
   width: 100%;
 }
 
 .purchase-location {
+  align-self: center;
+  grid-area: location;
   height: 1.875rem;
   width: 1.875rem;
 }
 
 .purchase-name {
+  align-self: center;
   color: #232326;
   font-size: 1rem;
   font-weight: 700;
+  grid-area: name;
   line-height: 150%;
+  padding: 0 0.25rem;
 }
 
 .purchase-price {
+  align-self: center;
   color: #232326;
-  text-align: right;
   font-size: 1.125rem;
   font-weight: 700;
+  grid-area: price;
   line-height: 1.25rem;
   letter-spacing: -0.015rem;
+  text-align: right;
 }
 
 .purchase-description {
   color: #272833;
   font-size: 0.875rem;
   font-weight: 400;
+  grid-area: description;
   line-height: 150%;
+}
+
+.purchase-date {
+  grid-area: purchaseDate;
 }
 
 .purchase-date-title {
@@ -68,14 +86,16 @@
   font-size: 1rem;
   font-weight: 600;
   line-height: 150%;
+  margin: 0;
 }
 
-.purchase-date {
+.purchase-date-value {
   color: #232326;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.25rem;
   letter-spacing: -0.015rem;
+  margin: 0;
 }
 
 .purchase-category {
