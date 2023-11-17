@@ -51,3 +51,9 @@ Given more time, I would improve this assignment by...
 - redoing the designs to use auto-layout for much easier implementation
 - restructuring the columns in the designs to be in the same order to minimize complexity
 - replacing placeholder data in the designs with real data to remove ambiguity
+
+## Final Thoughts
+
+This was the first time I have seen such a large difference in layout depending on mobile vs desktop. My immediate thought was to have two different HTML structures, but I wanted to challenge myself to get it done with DRY HTML, and use CSS for all things presentation. Depending on the product and team culture, the choice to go with better code (over matching the designs) may be the right choice. If it's not, then the best option would be to have un-DRY HTML.
+
+The majority of my experience is in React and using component libaries like Bootstrap, Material, and Chakra, so it was cool to just do everything vanilla. I would've liked to showcase my JavaScript/TypeScript skills, but perhaps I can do that in another assignment. 😃
