@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="/application.css">
-  <title>Purchases | Rad Tech</title>
-</head>
-<body>
-  Hello, World!
-</body>
-</html>
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% @data.each do |item| %>
+    <tr>
+      <td><%= item['name'] %></td>
+    </tr>
+  <% end %>
+</table>
