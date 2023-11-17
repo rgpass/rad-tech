@@ -35,9 +35,11 @@ Note: This assumes you are using macOS.
 ## Reasoning
 
 - Sinatra was chosen to simulate a Ruby-based backend, while not having all the overhead of a Rails app
+- Applied Normalize.css to create a unified experience across browsers
 
 ## Improvements
 
+- DRY up `application.css`
 - Add Y Statements for each item under Reasoning
 - Handle error state
 - Add pagination or infinite scrolling

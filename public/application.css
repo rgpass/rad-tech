@@ -1,3 +1,21 @@
-body {
-  background-color: tomato;
+.page-title {
+  color: #272833;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: 0.02188rem;
+  margin: 1.375rem 0.9375rem 1.25rem 0.9375rem;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    color: #16145a;
+    font-family: Source Sans Pro;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+  }
 }
