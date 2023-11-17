@@ -9,7 +9,7 @@
       <p class="purchase-description"><%= datum['description'] %></p>
       <div class="purchase-date">
         <p class="purchase-date-title">Purchase Date</p>
-        <p class="purchase-date-value"><%= datum['purchaseDate'] %></p>
+        <p class="purchase-date-value"><%= DateTime.parse(datum['purchaseDate']).strftime('%b %d, %Y') %></p>
       </div>
       <p class="purchase-category"><%= datum['category'] %></p>
     </article>

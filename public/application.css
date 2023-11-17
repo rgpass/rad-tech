@@ -55,7 +55,7 @@
   font-weight: 700;
   grid-area: name;
   line-height: 150%;
-  padding: 0 0.25rem;
+  padding: 0 0.625rem;
 }
 
 .purchase-price {

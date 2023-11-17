@@ -37,6 +37,7 @@ Note: This assumes you are using macOS.
 - Sinatra was chosen to simulate a Ruby-based backend, while not having all the overhead of a Rails app
 - Did not use a preprocessor to better showcase vanilla CSS skills
 - Applied Normalize.css to create a unified experience across browsers
+- Did not circle-crop the images because inspecting the Figma file's images shows they just _happen_ to be cropped
 
 ## Improvements
 
