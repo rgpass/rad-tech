@@ -1,17 +1,30 @@
 <h1 class="page-title">Purchases</h1>
 
 <section class="purchases-container">
-  <% @data.each do |datum| %>
-    <article class="purchase-card">
-      <img class="purchase-location" src="<%= datum['location'] %>" alt="<%= datum['name'] %>">
-      <h2 class="purchase-name"><%= datum['name'] %></h2>
-      <p class="purchase-price">$<%= '%.2f' % (datum['price'] / 100.0) %></p>
-      <p class="purchase-description"><%= datum['description'] %></p>
-      <div class="purchase-date">
-        <p class="purchase-date-title">Purchase Date</p>
-        <p class="purchase-date-value"><%= DateTime.parse(datum['purchaseDate']).strftime('%b %d, %Y') %></p>
-      </div>
-      <p class="purchase-category"><%= datum['category'] %></p>
-    </article>
-  <% end %>
+  <div class="purchases-table-header">
+    <div class="purchase-table-th">Location</div>
+    <div class="purchase-table-th">Name</div>
+    <div class="purchase-table-th">Price</div>
+    <div class="purchase-table-th">Category</div>
+    <div class="purchase-table-th">Description</div>
+    <div class="purchase-table-th">Purchase Date</div>
+  </div>
+
+  <div class="purchases-table-body">
+    <% @data.each do |datum| %>
+      <article class="purchase-card">
+        <div class="purchase-location">
+          <img src="<%= datum['location'] %>" alt="<%= datum['name'] %>">
+        </div>
+        <h2 class="purchase-name"><%= datum['name'] %></h2>
+        <p class="purchase-price">$<%= '%.2f' % (datum['price'] / 100.0) %></p>
+        <p class="purchase-category"><%= datum['category'] %></p>
+        <p class="purchase-description"><%= datum['description'] %></p>
+        <div class="purchase-date">
+          <p class="purchase-date-title">Purchase Date</p>
+          <p class="purchase-date-value"><%= DateTime.parse(datum['purchaseDate']).strftime('%b %d, %Y') %></p>
+        </div>
+      </article>
+    <% end %>
+  </div>
 </section>
