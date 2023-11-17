@@ -44,8 +44,10 @@ This section includes choices that I made and why, following the [Y-Statements](
 
 ## Improvements
 
-- Handle error state
-- Add pagination or infinite scrolling
-- Redo the designs to use auto-layout for much easier implementation
-- Suggest for the columns to be in the same order to minimize complexity
-- Suggest for designs in the future to use real data to remove ambiguity
+Given more time, I would improve this assignment by...
+
+- handling error state
+- adding pagination
+- redoing the designs to use auto-layout for much easier implementation
+- restructuring the columns in the designs to be in the same order to minimize complexity
+- replacing placeholder data in the designs with real data to remove ambiguity
