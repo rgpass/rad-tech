@@ -41,6 +41,10 @@
   width: 100%;
 }
 
+.purchase-id {
+  display: none;
+}
+
 .purchase-location img {
   align-self: center;
   grid-area: location;
@@ -143,6 +147,7 @@
     padding: 0;
   }
 
+  .purchase-id,
   .purchase-location,
   .purchase-name,
   .purchase-price,

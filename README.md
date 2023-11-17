@@ -39,6 +39,7 @@ Note: This assumes you are using macOS.
 - Wanted to have DRY HTML so all styling would be handled in CSS
 - Applied Normalize.css to create a unified experience across browsers
 - Did not circle-crop the images because inspecting the Figma file's images shows they just _happen_ to be cropped
+- Did not align with the order on desktop view because I wanted to keep the code DRY, prioritize mobile first, and keep it accessible via `display: table-*` values
 
 ## Improvements
 

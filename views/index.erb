@@ -1,26 +1,28 @@
 <h1 class="page-title">Purchases</h1>
 
-<section class="purchases-container">
+<section class="purchases-container" role="table">
   <div class="purchases-table-header">
-    <div class="purchase-table-th purchase-col-location">Location</div>
-    <div class="purchase-table-th">Name</div>
-    <div class="purchase-table-th">Price</div>
-    <div class="purchase-table-th">Category</div>
-    <div class="purchase-table-th">Description</div>
-    <div class="purchase-table-th">Purchase Date</div>
+    <div class="purchase-table-th"></div>
+    <div class="purchase-table-th purchase-col-location" role="columnheader">Location</div>
+    <div class="purchase-table-th" role="columnheader">Name</div>
+    <div class="purchase-table-th" role="columnheader">Price</div>
+    <div class="purchase-table-th" role="columnheader">Category</div>
+    <div class="purchase-table-th" role="columnheader">Description</div>
+    <div class="purchase-table-th" role="columnheader">Purchase Date</div>
   </div>
 
   <div class="purchases-table-body">
     <% @data.each do |datum| %>
-      <article class="purchase-card">
-        <div class="purchase-location">
-          <img src="<%= datum['location'] %>" alt="<%= datum['name'] %>">
+      <article class="purchase-card" role="row">
+        <div class="purchase-id" role="rowheader"></div>
+        <div class="purchase-location" role="cell">
+          <img src="<%= datum['location'] %>" alt="<%= datum['name'] %>" role="cell">
         </div>
-        <h2 class="purchase-name"><%= datum['name'] %></h2>
-        <p class="purchase-price">$<%= '%.2f' % (datum['price'] / 100.0) %></p>
-        <p class="purchase-category"><%= datum['category'] %></p>
-        <p class="purchase-description"><%= datum['description'] %></p>
-        <div class="purchase-date">
+        <h2 class="purchase-name" role="cell"><%= datum['name'] %></h2>
+        <p class="purchase-price" role="cell">$<%= '%.2f' % (datum['price'] / 100.0) %></p>
+        <p class="purchase-category" role="cell"><%= datum['category'] %></p>
+        <p class="purchase-description" role="cell"><%= datum['description'] %></p>
+        <div class="purchase-date" role="cell">
           <p class="purchase-date-title">Purchase Date</p>
           <p class="purchase-date-value"><%= DateTime.parse(datum['purchaseDate']).strftime('%b %d, %Y') %></p>
         </div>
